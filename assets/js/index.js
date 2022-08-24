@@ -1,3 +1,6 @@
+// 1.$(function())会形成局部作用域，
+// 2.我们声明函数时，最好把其他页面也需要用到的函数 声明在全局作用域中 以便 子页面 调用
+
 $(function () {
     getUserInfo()
     var layer = layui.layer
@@ -15,8 +18,7 @@ $(function () {
     })
 })
 
-// 1.$(function())会形成局部作用域，
-// 2.我们声明函数时，最好把其他页面也需要用到的函数 声明在全局作用域中 以便 子页面 调用
+
 
 // 获取用户基本信息
 function getUserInfo() {
